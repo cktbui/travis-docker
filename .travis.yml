@@ -12,6 +12,3 @@ script:
  
 after_script:
   - echo "Image built and run sucessfully"
-
-after_script:
-  - echo "Image built and run sucessfully"

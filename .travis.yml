@@ -1,0 +1,14 @@
+sudo: required
+dist: xenial
+language: go
+
+services:
+  - docker
+  
+script:
+  - docker pull hello-world 
+  - docker run -d hello-world
+  - docker ps
+ 
+after_script:
+  - echo "Image built and run sucessfully"

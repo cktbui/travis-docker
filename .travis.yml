@@ -10,7 +10,7 @@ script:
   - docker run -d hello-world
   - docker ps
   - docker build -t "staticwebserver:v1" .
-  - docker run -d -P staticwebserver:v1" /usr/sbin/apache2ctl -D FOREGROUND
+  - docker run -d -P "staticwebserver:v1" /usr/sbin/apache2ctl -D FOREGROUND
  
 after_script:
   - echo "Image built and run sucessfully"
